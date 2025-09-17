@@ -15,6 +15,9 @@ COPY . .
 # Build the application (this builds both backend and admin)
 RUN npm run build
 
+# Verify admin build
+RUN ls -la .medusa/admin/ || echo "Admin build directory not found"
+
 # Expose port
 EXPOSE 9000
 
