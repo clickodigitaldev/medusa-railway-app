@@ -18,6 +18,7 @@ module.exports = defineConfig({
   admin: {
     disable: false,
     path: "/app",
+    outDir: ".medusa/admin",
   },
   modules: [
     {
